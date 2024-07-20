@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="Booknow.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">Tourer<span>.</span></div>
+      <ul class="nav__links">
+        <li class="links"><a href="Homepage.html">Home</a></li>
+        <li class="links"><a href="Destination.html">Destinations</a></li>
+        <li class="links"><a href="Destination.html">Pricing</a></li>
+        <li class="links"><a href="Reviews.html">Reviews</a></li>
+      </ul>
+      <a href="Contact.html"> <button class="btn">Contact Us</button></a>
+    </nav>
+    <div class="booking-container">
+      <h2>Book Your Trip</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="number" name="Mobile No" id="required" />
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <input type="text" id="destination" name="destination" required />
+        </div>
+        <div class="form-group">
+          <label for="date">Travel Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Tourer.</h3>
+          <p>Travel Made Easy .</p>
+          <p>
+            We simplify the travel planning process,offering personalized
+            recommendations,hassle-free booking,and 24/7 support..
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <p>FAQs</p>
+          <p>Terms&Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Addres</h4>
+          <p><span>Addres:</span> Shri Nagar, Main Road,Nanded,431605.</p>
+          <p><span>E-mail:</span> Tourer18@gmail.com</p>
+          <p><span>Phone:</span> +91 8767145614</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright <i class="bi bi-c-circle"></i>Tourer.com All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

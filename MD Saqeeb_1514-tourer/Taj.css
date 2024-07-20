@@ -1,0 +1,9 @@
+/* .main{
+    /* border: 1px solid red; */
+/* } */ */
+.main img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+   
+}
