@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.logo{
+    display: flex
+    
+}
+h1{
+    display: flex;
+    align-items: center;
+}
+.nav13{
+    background-color: #0c519c !important;
+    color: black !important;
+   
+}
+.nav13{
+    display: flex;
+    align-items: center;
+    
+}
+a{  background-color: #0c519c !important;
+    color: black !important;
+    
+}
+a:hover{
+    background-color: yellow !important;
+    
+}
+.btn1{
+    background-color: yellow !important;
+    color: black !important;
+}
+.bg-img{
+    margin-top: 20px;
+    object-fit: cover;
+    
+    
+}
+.div2{
+    background-color: #0c519c;
+    position: relative;
+    height: 120vh;
+}
+.div3{
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    margin-left: 50px;
+    position: absolute;
+    bottom: 30%;
+}
+.div4{
+    background-color: yellow;
+    height: 20px;
+
+}
+.para{
+ 
+ padding-left: 30px;
+ padding-right: 30px;
+    
+   
+}
+.main{
+    
+    width: 90vw;
+    height: 100vh;
+    /* bottom: 30%; */
+}
+.div1{
+    background-color: lightgoldenrodyellow;
+    width: 80vw;
+    height: 120vh;
+    margin-left: 10%;
+    position: absolute;
+    top: 140%;
+
+   
+    
+}
+.div2{
+    background-color: #FFD700;
+    height: 30px;
+    
+}
+.about{
+    margin-left: 20px;
+    color: black;
+
+    
+}
+
+.para31{
+    margin-left: 20px;
+    font-size: 20px;
+}
+table{
+    width: 60vw;
+    height: 60vh;
+   
+    border: 2px solid;
+}
+
+.table-responsive{
+    width: 70vw;
+    overflow-x: hidden;
+    margin-top: 30px;
+    margin-left: 5%;
+    -webkit-overflow-scrolling:none
+    
+    
+}
+table, th, td {
+    border: 1px solid #ddd;
+    color: #000;
+}
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+.COUNCIL{
+    text-align: center;
+}
+.footer {
+    background-color: #00274C;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.footer div {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+.footer h3 {
+    margin-bottom: 10px;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .contact, .footer .important-links, .footer .college-timing, .footer .site-visitors {
+    padding: 10px;
+}
+.footer .site-visitors {
+    text-align: center;
+}
+.social-icons a {
+     margin: 0 5px;
+    color: white;
+   
+
+
+}
+.social-icons a:hover {
+
+    color: #FFD700;
+    
+}
+.btn-square{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px;
+    height: 38px;
+    
+}
+.rounded-circle {
+    border-radius: 50% !important;
+    padding: 10px 0;
+}
+.me-2 {
+    margin-right: .5rem !important;
+}
+.map-container {
+    position: relative;
+    height: 200px;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.footer-bottom {
+    background-color: #FFD700;
+    color: #00274C;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+a:visited {
+
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+.back-to-top {
+    position: fixed;
+    /* display: none; */
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+.btn-square, .btn-sm-square, .btn-lg-square {
+    padding: 0;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: normal;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+    
+}
+.btn-lg {
+    /* padding: .5rem 1rem; */
+    font-size: 1.25rem;
+    /* border-radius: 4px; */
+}
+.btn {
+    
+    line-height: 1.5;
+    
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+   
+    border: 1px solid transparent;
+}
+a {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.bi-arrow-up::before {
+    
+    content: "^";
+}

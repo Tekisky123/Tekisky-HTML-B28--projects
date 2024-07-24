@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Animal Planet</title>
+
+    <!-- Hamburger link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Slider link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- Font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon link -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/AP_logoORANGE.png"
+      type="image/x-icon"
+    />
+
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- costom css links -->
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main-card.css" />
+  </head>
+
+  <body>
+    <!-- *********************************** HEADER START ************************************************* -->
+    <header class="header" data-header>
+      <nav class="header-container container">
+        <a href="index.html" class="nav-logo">
+          <img src="./assets/images/AP_logoORANGE.png" class="nav-logo-img"
+        /></a>
+        <div class="nav-header">
+          <button class="header-button"></button>
+          <button class="header-button header-menu" data-nav-toggler>
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- ***************************************************** HEADER END ************************************************* -->
+
+    <!-- ***************************************** CONTENT  START ************************************************** -->
+    <div class="sidebar" data-navbar>
+      <div class="close-container">
+        <button class="nav-close-btn" data-nav-toggler>
+          <i class="bx bx-x"></i>
+        </button>
+      </div>
+      <div class="sidebar-container">
+        <ul class="sidebar-list sidebar-one">
+          <li>
+            <p class="sidebar-list-title">ANIMALS</p>
+          </li>
+
+          <li>
+            <a href="./animals/tigers.html" class="sidebar-link sidebar-bigger"
+              >Tiger</a
+            >
+          </li>
+
+          <li>
+            <a href="./animals/rhinos.html" class="sidebar-link sidebar-bigger"
+              >Rhinos</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./animals/orangutan.html"
+              class="sidebar-link sidebar-bigger"
+              >Orang Utan</a
+            >
+          </li>
+
+          <li>
+            <a href="./animals/turtle.html" class="sidebar-link sidebar-bigger"
+              >Turtle</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./animals/rhinohornbill.html"
+              class="sidebar-link sidebar-bigger"
+              >Rhinocerus Hornbill</a
+            >
+          </li>
+
+          <li>
+            <a href="./animals/dugong.html" class="sidebar-link sidebar-bigger"
+              >Dugong</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./animals/bluewhale.html"
+              class="sidebar-link sidebar-bigger"
+              >Blue Whale</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./animals/steppe-eagle.html"
+              class="sidebar-link sidebar-bigger"
+              >Steppe Eagle</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./animals/elephant.html"
+              class="sidebar-link sidebar-bigger"
+              >Elephant</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ***************************************************** CONTENT END *********************************************** -->
+
+    <!-- ************************************************** MAIN START ******************************************************** -->
+    <div class="overlay" data-overlay data-nav-toggler></div>
+    <main class="main">
+      <!-- *************************** SECTION 1 START (IMG DATA) ********************************** -->
+      <section class="home section" id="home">
+        <div class="home-container container">
+          <div>
+            <p class="home-subtitle">Nature | Explore</p>
+            <h1 class="home-title">
+              Save <strong class="strong">wild Animal</strong>
+            </h1>
+            <p class="home-desc">
+              The wildlife and its habitat cannot speak, so we must and we will
+              act before its too late.
+            </p>
+            <!-- <a href="#save" class="button">
+              <span>Explore</span>
+            </a> -->
+          </div>
+        </div>
+      </section>
+      <!-- ******************************************** SECTION 1 END *********************************** -->
+
+      <!-- ************************************* SECTION 2 START ************************************** -->
+      <section class="save section" id="save">
+        <div class="save-container container">
+          <ul class="save-list grid">
+            <li>
+              <p class="save-subtitle">Take action right now!</p>
+              <h2 class="save-title">Ways to Save Wildlife Today</h2>
+            </li>
+            <li>
+              <div class="save-card">
+                <div class="save-icon">
+                  <img
+                    src="./assets/images/icon-1.png"
+                    width="71"
+                    height="71"
+                    alt="icon"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="save-card-title">Educate yourself</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="save-card">
+                <div class="save-icon">
+                  <img
+                    src="./assets/images/icon-2.png"
+                    width="71"
+                    height="71"
+                    alt="icon"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="save-card-title">Volunteer</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="save-card">
+                <div class="save-icon">
+                  <img
+                    src="./assets/images/icon-3.png"
+                    width="71"
+                    height="71"
+                    alt="icon"
+                  />
+                </div>
+                <div>
+                  <h3 class="save-card-title">Report abuse</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="save-card">
+                <div class="save-icon">
+                  <img
+                    src="./assets/images/icon-4.png"
+                    width="71"
+                    height="71"
+                    alt="icon"
+                  />
+                </div>
+                <div>
+                  <h3 class="save-card-title">Donate</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="save-card">
+                <div class="save-icon">
+                  <img
+                    src="./assets/images/icon-5.png"
+                    width="71"
+                    height="71"
+                    alt="icon"
+                  />
+                </div>
+                <div>
+                  <h3 class="save-card-title">Recycle</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="save-card">
+                <div class="save-icon">
+                  <img
+                    src="./assets/images/icon-6.png"
+                    width="71"
+                    height="71"
+                    alt="icon"
+                  />
+                </div>
+                <div>
+                  <h3 class="save-card-title">Preserve habitats</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ***************************************************** SECTION 2 END ******************************** -->
+
+      <!-- ****************************************** SECTION 3 ************************************** -->
+      <section class="facts section container" id="facts">
+        <div class="explore-content facts-heading">
+          <h1 class="explore-title">Why Save Wildlife?</h1>
+          <p class="wildlife-cnt">
+            Saving wildlife is crucial for maintaining ecosystems, preserving
+            biodiversity, and supporting human well-being through ecosystem
+            services, medicinal resources, and economic benefits. It also holds
+            cultural, aesthetic, and ethical value, ensuring a healthy
+            environment for future generations.
+          </p>
+          <div class="explore-line"></div>
+        </div>
+      </section>
+      <!-- ************************************************ SECTION 3 END ************************************ -->
+
+      <!-- ************************************************** SECTION 4 FACTS ***************************************** -->
+      <section class="facts section container" id="facts">
+        <div class="explore-content facts-heading">
+          <h1 class="explore-title">Interesting Facts</h1>
+          <div class="explore-line"></div>
+        </div>
+        <!-- Flickity HTML init -->
+        <div
+          class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround": true }'
+        >
+          <div class="gallery-cell">
+            <a href="./animals/orangutan.html">
+              <div class="gallery-area-img-container">
+                <img
+                  src="./assets/images/orangutan-1.jpg"
+                  class="gallery-img-wrapper"
+                />
+              </div>
+            </a>
+            <div class="gallery-content-container">
+              <div class="gallery-title">
+                <span>Did You Know?</span>
+              </div>
+              <div class="gallery-description-container">
+                <a
+                  href="./animals/orangutan.html"
+                  class="gallery-description-link"
+                >
+                  <h2 class="gallery-description">
+                    ORANGUTANS ARE THE HEAVIEST TREE-DWELLING ANIMAL
+                  </h2>
+                </a>
+              </div>
+              <div class="read-container">
+                <a
+                  href="./animals/orangutan.html"
+                  class="gallery-container-readmore"
+                >
+                  <i class="bx bx-menu"></i>
+                  READ MORE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-cell">
+            <a href="./animals/tigers.html">
+              <div class="gallery-area-img-container">
+                <img
+                  src="./assets/images/tiger-1.jpg"
+                  class="gallery-img-wrapper"
+                />
+              </div>
+            </a>
+            <div class="gallery-content-container">
+              <div class="gallery-title">
+                <span>Did You Know?</span>
+              </div>
+              <div class="gallery-description-container">
+                <a
+                  href="./animals/tigers.html"
+                  class="gallery-description-link"
+                >
+                  <h2 class="gallery-description">
+                    TIGERS HAVE BEEN AROUND FOR OVER 2 MILLION YEARS
+                  </h2>
+                </a>
+              </div>
+              <div class="read-container">
+                <a
+                  href="./animals/tigers.html"
+                  class="gallery-container-readmore"
+                >
+                  <i class="bx bx-menu"></i>
+                  READ MORE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-cell">
+            <a href="./animals/rhinos.html">
+              <div class="gallery-area-img-container">
+                <img
+                  src="./assets/images/rhino-1.jpg"
+                  class="gallery-img-wrapper"
+                />
+              </div>
+            </a>
+            <div class="gallery-content-container">
+              <div class="gallery-title">
+                <span>Did You Know?</span>
+              </div>
+              <div class="gallery-description-container">
+                <a
+                  href="./animals/rhinos.html"
+                  class="gallery-description-link"
+                >
+                  <h2 class="gallery-description">
+                    RHINOS CAN WEIGH OVER 3 TONNES
+                  </h2>
+                </a>
+              </div>
+              <div class="read-container">
+                <a
+                  href="./animals/rhinos.html"
+                  class="gallery-container-readmore"
+                >
+                  <i class="bx bx-menu"></i>
+                  READ MORE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-cell">
+            <a href="./animals/turtle.html">
+              <div class="gallery-area-img-container">
+                <img
+                  src="./assets/images/turtle-1.jpg"
+                  class="gallery-img-wrapper"
+                />
+              </div>
+            </a>
+            <div class="gallery-content-container">
+              <div class="gallery-title">
+                <span>Did You Know?</span>
+              </div>
+              <div class="gallery-description-container">
+                <a
+                  href="./animals/turtle.html"
+                  class="gallery-description-link"
+                >
+                  <h2 class="gallery-description">
+                    SEA TURTLES DON’T RETRACT INTO THEIR SHELLS
+                  </h2>
+                </a>
+              </div>
+              <div class="read-container">
+                <a
+                  href="./animals/turtle.html"
+                  class="gallery-container-readmore"
+                >
+                  <i class="bx bx-menu"></i>
+                  READ MORE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ******************************************* SECTION 4 END *********************************** -->
+
+      <!-- ***********************************************SECTION 5 CARDS *************************************** -->
+      <section class="recommended section container" id="recommended">
+        <div class="explore-content facts-heading">
+          <h1 class="explore-title">Endangered Species</h1>
+          <div class="explore-line"></div>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Magpie</h2>
+              <p class="copy">Magpies are birds of the family Corvidae</p>
+              <a href="./animals/magpie.html">
+                <button class="btn">View More</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Tiger</h2>
+              <p class="copy">The tiger is the largest living cat species</p>
+              <a href="./animals/tigers.html">
+                <button class="btn">View More</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Turtle</h2>
+              <p class="copy">
+                Turtles are an order of reptiles known as Testudines
+              </p>
+              <a href="./animals/turtle.html">
+                <button class="btn">View More</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Rhinos</h2>
+              <p class="copy">
+                A rhinoceros is a member of any of the five extant species of
+                odd-toed ungulates in the family Rhinocerotidae.
+              </p>
+              <a href="./animals/rhinos.html">
+                <button class="btn">View More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- **************************************************** SECTION 5 END ******************************* -->
+      <div class="view-more-container center">
+        <a
+          href="endangered-species.html"
+          class="view-more-link header-subscribe"
+          >View more</a
+        >
+      </div>
+    </main>
+    <!-- ************************************************************ MAIN END ******************************************** -->
+
+    <!-- *********************************************************FOOTER START ************************************************ -->
+    <footer class="footer section">
+      <div class="footer-container container">
+        <p class="footer-icon">
+          &copy; 2024 Animal Lovers United | Follow us on
+          <a
+            href="https://www.facebook.com/profile.php?id=100085151845832"
+            target="_blank"
+            ><i class="fab fa-facebook-f icon"></i
+          ></a>
+
+          <a href="https://www.instagram.com/its.me_musa.08/" target="_blank"
+            ><i class="fab fa-instagram icon"></i
+          ></a>
+
+          <a href="https://github.com/musashaikh6448" target="_blank"
+            ><i class="fab fa-github icon"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- ****************************************************** FOOTER END ********************************************************** -->
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>

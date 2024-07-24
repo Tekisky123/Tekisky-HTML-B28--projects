@@ -1,0 +1,971 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  list-style: none;
+}
+
+* {
+  --sb-track-color: #ffffff;
+  --sb-thumb-color:;
+  --sb-size: 7px;
+}
+
+*::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.my_span {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: #d1d16b;
+  position: fixed;
+  border-radius: 75px;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my_section {
+  display: none; /* Hide the section initially */
+}
+.my_span:hover + .my_section {
+  display: block; /* Display the section when hovering over the span */
+  transition: 0.2s;
+}
+.my_section {
+  display: none;
+  width: 200px;
+  height: 350px;
+  border: 2px solid black;
+  position: absolute;
+  background-color: #d1d16b;
+  right: 10px;
+  top: 25vh;
+  border-radius: 30px;
+}
+.fa-comments {
+  font-size: 52px;
+}
+nav {
+  width: 100%;
+  height: 160px;
+  background-color: #d1d16b;
+  z-index: 2;
+  position: absolute;
+}
+
+.logo-text {
+  margin-top: -22px;
+  margin-left: 1px;
+  color:whitesmoke;
+  text-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 28px rgba(0, 0, 0, 0.25);
+}
+nav {
+  position: sticky;
+  top: -100px;
+}
+.logo {
+  display: flex;
+}
+.logo-image:hover {
+  transition: 0.2s;
+  scale: 1.2;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.fas {
+  color: black;
+}
+
+.upper_btns ul {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.upper_btns ul li {
+  margin-right: 10px;
+  list-style: none;
+  color: black;
+}
+p {
+  color: gray;
+}
+.upper_btns ul li a {
+  margin-right: 20px;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+.upper_btns ul li:hover {
+  margin-right: 10px;
+  list-style: none;
+  color: white;
+  background-color: #d1d16b;
+  text-align: center;
+  line-height: 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 28px rgba(0, 0, 0, 0.25);
+  width: auto;
+  border-left: 1px solid black;
+}
+
+.others {
+  margin-top: 120px;
+  margin-left: 100px;
+}
+.others li {
+  display: inline-block;
+  margin-top: -10px;
+  transition: 0.2s;
+}
+.others a {
+  color: white;
+  text-decoration: none;
+}
+
+.other-buttons li:hover {
+  background-color: #d1d16b;
+  width: 120px;
+  height: 40px;
+  scale: 1.1;
+  border: 1px solid #d1d16b;
+  text-align: left;
+  line-height: 40px;
+  color: black;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 28px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border-left: 1px solid black;
+}
+
+.other-buttons li:hover a {
+  color: black;
+}
+
+.Destinations:hover .ddown {
+  display: block;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: -50px;
+  margin-top: 11px;
+}
+.ddown {
+  display: none;
+}
+.ddown li {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: #d3d3d3;
+}
+.ddownsecond li {
+  width: 260px;
+  height: 40px;
+  text-align: center;
+  background-color: #d3d3d3;
+  margin-left: -25px;
+}
+.ddownsecond li:hover {
+  background-color: #d1d16b;
+  width: 280px;
+  height: 45px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 28px rgba(0, 0, 0, 0.25);
+  margin-top: 5px;
+  border-left: 1px solid black;
+}
+.ddown li:hover {
+  background-color: #d1d16b;
+  scale: 1.1;
+  box-shadow: 0 0 5px black;
+  line-height: 40px;
+  margin-top: 5px;
+  border-left: 1px solid black;
+  text-align: left;
+}
+.Destinations .ddown li:hover a {
+  color: whitesmoke;
+}
+
+/* Navigation Bar Ends Here */
+
+/* Hidden Navigation Bar starts */
+.hnav {
+  display: flex;
+  justify-content: space-between;
+}
+.hddown {
+  display: none;
+  position: absolute;
+  z-index: 3;
+}
+.hddown li {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: #d1d16b;
+  margin-left: -60px;
+}
+.hddown li a {
+  text-decoration: none;
+  color: black;
+}
+.burger:hover .hddown {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.burger {
+  margin: 30px;
+}
+.hnav {
+  display: none;
+}
+
+.hddown li:hover {
+  background-color: #d1d16b;
+  scale: 1.1;
+  box-shadow: 0 0 5px black;
+  line-height: 40px;
+  margin-top: 5px;
+  border-left: 1px solid black;
+  transition: 0.2s;
+}
+
+.hbtn {
+  display: none;
+  width: 50px;
+  height: 32px;
+  position: absolute;
+  top: 51vh;
+  left: 10vw;
+  z-index: 13;
+  border-radius: 15px;
+  border: none;
+  background-color: #d1d16b;
+  cursor: pointer;
+}
+
+.info_one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+.infocommon {
+  width: 50%;
+  padding-top: 70px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+.infoimg_one {
+  border-radius: 20px;
+}
+.infotxt_one {
+  width: 50%;
+  padding-top: 70px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.info_btn {
+  width: 150px;
+  height: 50px;
+  margin-top: -10px;
+  margin-left: 50%;
+  background-color: #808080;
+  color: white;
+  border-radius: 10px;
+}
+.info_btn:hover {
+  background-color: #d1d16b;
+  color: black;
+  transform: scale(1.05);
+  font-size: larger;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.common_heading {
+  text-shadow: 2px 2px 5px black;
+  color: #d1d16b;
+}
+
+.heading_why {
+  color: #d1d16b;
+  margin: 60px;
+  font-size: 50px;
+}
+
+/* contryside tours starts */
+
+.maincontainer {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  overflow-x: scroll;
+}
+.commoncites {
+  width: 30%;
+  height: 60vh;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  align-items: end;
+  color: black;
+}
+.commoncites:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 0 0 20px 5px black;
+}
+.commoncites h3 {
+  padding: 10px;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+.commoncites a {
+  text-decoration: none;
+  text-align: center;
+}
+.commoncites p {
+  padding: 10px;
+  color: whitesmoke;
+  text-transform: capitalize;
+}
+.commonh3 {
+  text-shadow: 1px 1px 2px black;
+}
+.commonh3:hover {
+  text-decoration: underline;
+}
+
+.Delhi_city {
+  background-image: url(https://wallpaperaccess.com/full/1896171.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Mumbai_city {
+  background-image: url(https://wallpaperaccess.com/full/1180344.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Agra_city {
+  background-image: url(https://wallpaperaccess.com/full/8231407.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Jaipur_city {
+  background-image: url(https://wallpaperaccess.com/full/900997.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Varanasi_city {
+  background-image: url(https://wallpaperaccess.com/full/2714729.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Bangalore_city {
+  background-image: url(https://wallpaperaccess.com/full/1906271.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Kolkata_city {
+  background-image: url(https://wallpaperaccess.com/full/1883868.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Chennai_city {
+  background-image: url(https://wallpaperaccess.com/full/5222759.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Hyderabad_city {
+  background-image: url(https://wallpaperaccess.com/full/2142440.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Udaipur_city {
+  background-image: url(https://wallpaperaccess.com/full/1905878.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Goa_city {
+  background-image: url(https://wallpaperaccess.com/full/3068226.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Amritsar_city {
+  background-image: url(https://wallpaperaccess.com/full/4666906.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Mysore_city {
+  background-image: url(https://wallpaperaccess.com/full/5515503.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Kochi_city {
+  background-image: url(https://wallpaperaccess.com/full/1635200.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.Rishikesh_city {
+  background-image: url(https://wallpaperaccess.com/full/2351788.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+  
+  /* contryside tours ends */
+
+  
+/* footer Starts */
+
+
+footer {
+  width: 100%;
+  height: 350px;
+  background-color: #1c2431;
+ 
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: black;
+  background-color: gray;
+}
+.left-content p {
+  margin-left: 30px;
+  color:white;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+}
+.list li a {
+  text-decoration: none;
+}
+.icon {
+  font-size: 24px;
+  color:#bdc581;
+  cursor: pointer;
+}
+.copyright-icon {
+  font-size: 24px;
+  background-color:gray;
+}
+li {
+  margin-right: 30px;
+}
+
+.second {
+  display: flex;
+  justify-content: space-around;
+}
+.common {
+  width: 19%;
+  height: 200px;
+  color: whitesmoke;
+  margin: 0px 40px;
+}
+.common a {
+  text-decoration: none;
+  color: white;
+}
+.common li:hover{
+   color: #d1d16b;
+   cursor: pointer;
+   scale: 1.01;
+}
+.common li a:hover{
+  color: #d1d16b;
+  cursor: pointer;
+  scale: 1.01;
+}
+.one p {
+  text-transform: lowercase;
+  color: white;
+  padding-top: 25px;
+}
+.two li {
+  list-style: none;
+  padding-top: 10px;
+  
+}
+.three li {
+  list-style: none;
+  padding-top: 10px;
+}
+.four li {
+  list-style: none;
+  padding-top: 10px;
+}
+.pptag p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  background-color:gray;
+  color:black;
+}
+.fa-copyright{
+  color:#d1d16b;
+}
+.myicons{
+  display: flex;
+  justify-content:flex-start;
+  color:orangered;
+  font-size:40px;
+}
+.fa-cc-visa{
+  width: 44px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3a6186;
+  background-color: white;
+}
+
+.fa-cc-mastercard{
+  width: 44px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  background-color:orangered;
+  margin-top: 5px;
+}
+.fa-credit-card{
+  width: 44px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  background-color:#1e9eaa;
+  margin-top: 5px;
+}
+.fa-cc-amex{
+  width: 44px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#2354cf;
+  background-color:white;
+  margin-top: 5px;
+}
+.fa-cc-discover{
+  width: 44px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  background-color:orange;
+  margin-top: 5px;
+}
+.fa-paypal{
+  color: #2354cf;
+}
+/* footer ends */
+
+.arti{
+  display: none;
+
+}
+article {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:#1c2431;
+}
+
+.row_one ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.row_one p {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.row_one ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.contact{
+  text-align: center;
+  color: whitesmoke;
+}
+.commonrow{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.commonrow li:hover{
+  color: #d1d16b;
+  cursor: pointer;
+  scale: 1.01;
+}
+.commonrow li a:hover{
+ color: #d1d16b;
+ cursor: pointer;
+ scale: 1.01;
+}
+.row_one{
+  width: 100%;
+  height: auto;
+  background-color:gray;
+}
+.row_two ul  a{
+  text-decoration: none;
+  color: white;
+}
+.row_two ul  li{
+  text-decoration: none;
+  color: white;
+  border-top: 2px solid black;
+  padding: 20px;
+}
+.row_two {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  /* background-color:gray; */
+}
+.row_three ul a{
+  color: white;
+  text-decoration: none;
+  padding-top:10px ;
+}
+.row_three ul li{
+ 
+  padding-top:10px ;
+}
+.row_three {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+.row_three li{
+  border-top: 2px solid black;
+  padding: 20px;
+
+}
+
+
+.commonrow ul a{
+  color: white;
+  text-decoration: none;
+  padding-top:10px ;
+}
+.commonrow ul li{
+ 
+  padding-top:10px ;
+}
+.commonrow {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  /* background-color:gray; */
+}
+.commonrow li{
+  border-top: 2px solid black;
+  padding: 20px;
+
+}
+.pone{
+  background-color: gray;
+}
+  
+  /* For Mobile */
+  @media screen and (max-width: 600px) {
+  .mainnav {
+    display: none;
+  }
+  .hnav {
+    width: 100%;
+    display: block;
+    display: flex;
+    background-color: #bdc581;
+  }
+  .hlogoimg {
+    margin-left: 40px;
+  }
+
+  .common_heading {
+    font-size: 20px;
+  }
+
+  .common_heading.heading_why {
+    color: #abab3f;
+    font-size: 24px;
+    margin-top: 10;
+  }
+  .info_one {
+    display: flex;
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+  
+  .img_common {
+    width: 24vh;
+    height: 20vh;
+    background-position: center;
+    object-fit: fill;
+    margin-left: -20px;
+  }
+  p {
+    font-size: 20px;
+  }
+  /* cities page */
+
+  .maincontaine {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+  }
+  .visit {
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #d1d16b;
+  }
+  .commoncites {
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+  }
+  .commonh3 {
+    font-size: small;
+  }
+  .info_btn {
+    background-color: #abab3f;
+    margin-left: 30%;
+  }
+  body {
+    background-color: #f8efba;
+  }
+  .favorite {
+    font-size: 15px;
+    margin: 0px;
+  }
+  .arti{
+    display: block;
+  }
+ 
+  .myfoot{
+    display: none;
+  }
+  .pone{
+    display: none;
+  }
+}
+
+/* For Tablet */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .mainnav {
+    display: none;
+  }
+  .upperbtns_container {
+    display: block;
+  }
+
+  .hnav {
+    display: block;
+    display: flex;
+    background-color: #bdc581;
+  }
+  .hlogoimg {
+    margin-left: 40px;
+  }
+  .inpt {
+    display: none;
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    left: 40px;
+  }
+  .myinpt {
+    display: block;
+  }
+  .btn-search {
+    display: none;
+  }
+  .hbtn {
+    display: block;
+  }
+  .slogan_three {
+    position: absolute;
+    top: 170px;
+  }
+  .slogan_two {
+    position: absolute;
+    top: 400px;
+  }
+  .slogan {
+    position: absolute;
+    top: 240px;
+  }
+  .common_heading {
+    font-size: 40px;
+  }
+
+  .common_heading.heading_why {
+    color: #abab3f;
+    font-size: 44px;
+    margin-top: 30px;
+  }
+  .info_one {
+    display: flex;
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+  .img_common {
+    width: 35vh;
+    height: 40vh;
+    background-position: center;
+    object-fit: fill;
+    margin-left: -10px;
+  }
+  p {
+    font-size: 30px;
+  }
+
+  /* cities page */
+
+  .maincontaine {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction:row;
+    flex-wrap: nowrap;
+    overflow-x:scroll; */
+  }
+  .visit {
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: #d1d16b;
+  }
+  .commoncites {
+    justify-content: space-between;
+    width: 44%;
+    height: 300px;
+  }
+  .commonh3 {
+    font-size: medium;
+  }
+  .info_btn {
+    background-color: #abab3f;
+    margin-left: 43%;
+  }
+  body {
+    background-color: #f8efba;
+  }
+  .favorite {
+    font-size: 34px;
+    margin: 0px;
+
+  }
+  .arti{
+    display: block;
+  }
+ 
+  .myfoot{
+    display: none;
+  }
+  .pone{
+    display: none;
+  }
+}
+

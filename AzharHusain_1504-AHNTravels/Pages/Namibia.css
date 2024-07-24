@@ -1,0 +1,641 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-transform: none;
+    list-style: none;
+  }
+  
+  * {
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #abab3f;
+    --sb-size: 7px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+  }
+  
+  .my_span {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: #abab3f;
+    position: fixed;
+    border-radius: 75px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .my_section {
+    display: none; /* Hide the section initially */
+  }
+  .my_span:hover + .my_section {
+    display: block; /* Display the section when hovering over the span */
+    transition: 0.2s;
+  }
+  .my_section {
+    display: none;
+    width: 200px;
+    height: 350px;
+    border: 2px solid black;
+    position: absolute;
+    background-color: #abab3f;
+    right: 10px;
+    top: 25vh;
+    border-radius: 30px;
+  }
+  .fa-comments {
+    font-size: 52px;
+  }
+  nav {
+    width: 100%;
+    height: 160px;
+    background-color: #abab3f;
+    z-index: 2;
+    position: absolute;
+  }
+  
+  .logo-text {
+    margin-top: -22px;
+    margin-left: 1px;
+    color: rgb(100, 188, 222);
+    text-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 28px rgba(0, 0, 0, 0.25);
+  }
+  nav {
+    position: sticky;
+    top: -100px;
+  }
+  .logo {
+    display: flex;
+  }
+  .logo-image:hover {
+    transition: 0.2s;
+    scale: 1.2;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .fas {
+    color: black;
+  }
+  
+  .upper_btns ul {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .upper_btns ul li {
+    margin-right: 10px;
+    list-style: none;
+    color: black;
+  }
+  p {
+    color: gray;
+  }
+  .upper_btns ul li a {
+    margin-right: 20px;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+  }
+  .upper_btns ul li:hover {
+    margin-right: 10px;
+    list-style: none;
+    color: white;
+    background-color: #abab3f;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 28px rgba(0, 0, 0, 0.25);
+    width: auto;
+    border-left: 1px solid black;
+  }
+  
+  .others {
+    margin-top: 120px;
+    margin-left: 100px;
+  }
+  .others li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: -10px;
+    transition: 0.2s;
+  }
+  .others a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .other-buttons li:hover {
+    background-color: #abab3f;
+    width: 120px;
+    height: 40px;
+    scale: 1.1;
+    border: 1px solid #abab3f;
+    text-align: left;
+    line-height: 40px;
+    color: black;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 28px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border-left: 1px solid black;
+  }
+  
+  .other-buttons li:hover a {
+    color: black;
+  }
+  
+  .Destinations:hover .ddown {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+    margin-top: 11px;
+  }
+  .ddown {
+    display: none;
+  }
+  .ddown li {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background-color: #d3d3d3;
+  }
+  .ddownsecond li {
+    width: 260px;
+    height: 40px;
+    text-align: center;
+    background-color: #d3d3d3;
+    margin-left: -25px;
+  }
+  .ddownsecond li:hover {
+    background-color: #abab3f;
+    width: 280px;
+    height: 45px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 28px rgba(0, 0, 0, 0.25);
+    margin-top: 5px;
+    border-left: 1px solid black;
+  }
+  .ddown li:hover {
+    background-color: #abab3f;
+    scale: 1.1;
+    box-shadow: 0 0 5px black;
+    line-height: 40px;
+    margin-top: 5px;
+    border-left: 1px solid black;
+    text-align: left;
+  }
+  .Destinations .ddown li:hover a {
+    color: whitesmoke;
+  }
+  
+  /* Navigation Bar Ends Here */
+  
+  /* Hidden Navigation Bar starts */
+  .hnav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hddown {
+    display: none;
+    position: absolute;
+    z-index: 3;
+  }
+  .hddown li {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background-color: #abab3f;
+    margin-left: -60px;
+  }
+  .hddown li a {
+    text-decoration: none;
+    color: black;
+  }
+  .burger:hover .hddown {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .burger {
+    margin: 30px;
+  }
+  .hnav {
+    display: none;
+  }
+  
+  .hddown li:hover {
+    background-color: #abab3f;
+    scale: 1.1;
+    box-shadow: 0 0 5px black;
+    line-height: 40px;
+    margin-top: 5px;
+    border-left: 1px solid black;
+    transition: 0.2s;
+  }
+  
+  .hbtn {
+    display: none;
+    width: 50px;
+    height: 32px;
+    position: absolute;
+    top: 51vh;
+    left: 10vw;
+    z-index: 13;
+    border-radius: 15px;
+    border: none;
+    background-color: #abab3f;
+    cursor: pointer;
+  }
+  
+  .info_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+  }
+  .infocommon {
+    width: 50%;
+    padding-top: 70px;
+    padding-left: 30px;
+    font-size: 30px;
+  }
+  .infoimg_one {
+    border-radius: 20px;
+  }
+  .infotxt_one {
+    width: 50%;
+    padding-top: 70px;
+    padding-left: 30px;
+    font-size: 30px;
+  }
+  
+  .info_btn {
+    width: 150px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: 50%;
+    background-color: #808080;
+    color: white;
+    border-radius: 10px;
+  }
+  .info_btn:hover {
+    background-color: #abab3f;
+    color: black;
+    transform: scale(1.05);
+    font-size: larger;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .common_heading {
+    text-shadow: 2px 2px 5px black;
+    color: #abab3f;
+  }
+  
+  .heading_why {
+    color: #abab3f;
+    margin: 60px;
+    font-size: 50px;
+  }
+  
+  /* contryside tours starts */
+  
+  .maincontainer {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    overflow-x: scroll;
+  }
+  .commoncites {
+    width: 30%;
+    height: 60vh;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: end;
+    color: black;
+  }
+  .commoncites:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px black;
+  }
+  .commoncites h3 {
+    padding: 10px;
+    color: whitesmoke;
+    text-transform: uppercase;
+  }
+  .commoncites a {
+    text-decoration: none;
+    text-align: center;
+  }
+  .commoncites p {
+    padding: 10px;
+    color: whitesmoke;
+    text-transform: capitalize;
+  }
+  .commonh3 {
+    text-shadow: 1px 1px 2px black;
+  }
+  .commonh3:hover {
+    text-decoration: underline;
+  }
+  
+  .Windhoek_city {
+    background-image: url(https://wallpaperaccess.com/full/13778447.jpg);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Swakopmund_city {
+    background-image: url(https://media.istockphoto.com/id/1215269648/photo/swakopmund-namibia-german-colonial-architecture-africa.jpg?b=1&s=612x612&w=0&k=20&c=XVCIfmzog_dnIowTk_vR5UCHQ9NA9u4MRIlaiVftvdk=);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Walvis_Bay_city {
+    background-image: url(https://images.pexels.com/photos/21937531/pexels-photo-21937531/free-photo-of-sailboat-in-bay.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Lüderitz_city {
+    background-image: url(https://media.istockphoto.com/id/1725436785/photo/l%C3%BCderitz-namibia-diaz-point-lighthouse-aerial-architecture-detail-luderitz.jpg?b=1&s=612x612&w=0&k=20&c=Uxk338LJkICp06F7Z_7OUoQv0WhR-09zBFJ6iSM2X48=);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Otjiwarongo_city {
+    background-image: url(https://media.istockphoto.com/id/836653740/photo/waterberg-plateau-and-the-national-park-namibia.jpg?b=1&s=612x612&w=0&k=20&c=8TetnQ6seBzwUd14bnc5srBMZJY1TRNIXUR8UnPcEDg=);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Oshakati_city {
+    background-image: url(https://media.istockphoto.com/id/1251742032/photo/cattle-crossing-a-cuvelai-oshana-floodwater-channel-near-oshakati.jpg?b=1&s=612x612&w=0&k=20&c=b7ZBMGTfY7tqUYYiFkjZdX_LmCjSyfCNcFRd0CSbjBU=);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Rundu_city {
+    background-image: url(https://media.istockphoto.com/id/2155418518/photo/aerial-photo-of-the-okavango-delta-area-botswana.jpg?b=1&s=612x612&w=0&k=20&c=DDGqzFgq8hIvjNhJctutNeFZMoQwWcyE-EmzLgPGTUw=);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Keetmanshoop_city {
+    background-image: url(https://media.istockphoto.com/id/1263927757/photo/trees-among-rocks.jpg?b=1&s=612x612&w=0&k=20&c=Cs1eCSKC1nGZCp8mocnFIlLcgsj9pNS47057Yh2bO1U=);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Grootfontein_city {
+    background-image: url(https://images.pexels.com/photos/3347324/pexels-photo-3347324.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Ondangwa_city {
+    background-image: url(https://images.pexels.com/photos/3714898/pexels-photo-3714898.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+
+/* contryside tours ends */
+
+/* For Mobile */
+@media screen and (max-width: 900px) {
+  .mainnav{
+    display:none;
+  }
+  .hnav{
+    width: 100%;
+    display: block;
+    display: flex;
+    background-color:#bdc581;
+  }
+  .hlogoimg{
+    margin-left: 40px;
+  }
+ 
+ .common_heading {
+  font-size: 20px;
+  
+ }
+
+ .common_heading.heading_why {
+  color:#abab3f;
+  font-size:24px;
+  margin-top: 10;
+}
+.info_one{
+ display: flex;
+ float: left;
+  width: 100%;
+border-bottom: 2px solid black;
+border-top: 2px solid black;
+
+}
+.img_common{
+width: 24vh;
+height: 20vh;
+background-position: center;
+object-fit: fill;
+margin-left: -20px;
+}
+p{
+ font-size:20px;
+}
+/* cities page */
+
+  .maincontaine{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x:scroll;
+    
+  }
+  .visit{
+    font-size:15px;
+    font-weight: bolder;
+    background-color: #d1d16b;
+  }
+  .commoncites{
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+  }
+  .commonh3{
+    font-size: small;
+  }
+  .info_btn{
+    background-color: #abab3f;
+    margin-left: 30%;
+  }
+  body{
+    background-color: #f8efba;
+  }
+  .favorite{
+    font-size: 15px;
+    margin: 0px;
+  }
+ 
+}
+
+
+/* For Tablet */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .mainnav {
+    display: none;
+  }
+  .upperbtns_container {
+    display: block;
+  }
+
+  .hnav {
+    display: block;
+    display: flex;
+    background-color:#bdc581;
+  }
+  .hlogoimg {
+    margin-left: 40px;
+  }
+  .inpt {
+    display: none;
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    left: 40px;
+  }
+  .myinpt {
+    display: block;
+  }
+  .btn-search {
+    display: none;
+  }
+  .hbtn {
+    display: block;
+  }
+  .slogan_three {
+    position: absolute;
+    top: 170px;
+  }
+  .slogan_two {
+    position: absolute;
+    top: 400px;
+  }
+  .slogan {
+    position: absolute;
+    top: 240px;
+  }
+  .common_heading {
+    font-size: 40px;
+  }
+
+  .common_heading.heading_why {
+    color:#abab3f;
+    font-size: 44px;
+    margin-top: 30px;
+  }
+  .info_one {
+    display: flex;
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+  .img_common {
+    width: 35vh;
+    height: 40vh;
+    background-position: center;
+    object-fit: fill;
+    margin-left: -10px;
+  }
+  p {
+    font-size: 30px;
+  }
+
+
+/* cities page */
+
+.maincontaine{
+  display: flex;
+  justify-content:space-between;
+  /* flex-direction:row;
+  flex-wrap: nowrap;
+  overflow-x:scroll; */
+  
+}
+.visit{
+  font-size:30px;
+  font-weight: bolder;
+  background-color: #d1d16b;
+}
+.commoncites{
+  justify-content: space-between;
+  width: 44%;
+  height: 300px;
+}
+.commonh3{
+  font-size:medium;
+}
+.info_btn{
+  background-color: #abab3f;
+  margin-left: 43%;
+}
+body{
+  background-color: #f8efba;
+}
+.favorite{
+  font-size: 34px;
+  margin: 0px;
+  
+}
+}
